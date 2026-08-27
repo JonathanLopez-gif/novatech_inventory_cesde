@@ -94,3 +94,7 @@ Este proyecto implementa la arquitectura **Git Flow** de forma estricta:
 ## 👥 Equipo de Desarrollo
 
 **Developer Team** - NovaTech Solutions
+
+## Sección de Soporte
+
+Contactar a Integrante A (soporteA@novatech.com)
