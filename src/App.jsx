@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ProductForm } from './components/ProductForm';
+import { ProductList } from './components/ProductList';
 
 export function App() {
+  const [products, setProducts] = useState([]);
+  const [editingProduct, setEditingProduct] = useState(null);
+
+  const handleAdd = (product) => setProducts([...products, product]);
+  const handleEdit = (product) => setEditingProduct(product);
+  const handleUpdate = (updatedProduct) => {
+    setProducts(products.map(p => p.id === updatedProduct.id ? updatedProduct : p));
+    setEditingProduct(null);
+  };
+
   return (
-    <div style={{ padding: '40px', fontFamily: 'sans-serif', textAlign: 'center' }}>
-      <h1>NovaTech Solutions</h1>
-      <p>Sistema de Gestión de Inventario</p>
-      <small>Configurando estructura inicial del proyecto...</small>
+    <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
+      <h1>NovaTech Solutions - Inventario</h1>
+      <ProductForm onAddProduct={handleAdd} />
+      <ProductList products={products} onEdit={handleEdit} />
     </div>
   );
 }
-
 export default App;
