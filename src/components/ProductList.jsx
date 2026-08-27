@@ -1,4 +1,5 @@
 import React from 'react';
+import { calculateTotalPrice } from '../utils/priceCalculator';
 
 export function ProductList({ products, onEdit, onDelete }) {
   return (
@@ -7,7 +8,8 @@ export function ProductList({ products, onEdit, onDelete }) {
         <tr>
           <th>ID</th>
           <th>Nombre</th>
-          <th>Precio</th>
+          <th>Precio Base</th>
+          <th>Precio Final (Con IVA)</th>
           <th>Categoría</th>
           <th>Stock</th>
           <th>Acciones</th>
@@ -19,6 +21,7 @@ export function ProductList({ products, onEdit, onDelete }) {
             <td>{p.id}</td>
             <td>{p.name}</td>
             <td>${p.price}</td>
+            <td>${calculateTotalPrice(p.price).toFixed(2)}</td>
             <td>{p.category}</td>
             <td>{p.stock}</td>
             <td>
