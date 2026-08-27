@@ -49,6 +49,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto localmente:
 1. **Clonar el repositorio:**
 
     *git clone https://github.com/JonathanLopez-gif/novatech_inventory_cesde.git*
+    
     *cd novatech_inventory_cesde*
 
 2. **Instalar dependencias:**
