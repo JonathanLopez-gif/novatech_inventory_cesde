@@ -12,12 +12,15 @@ export function App() {
     setProducts(products.map(p => p.id === updatedProduct.id ? updatedProduct : p));
     setEditingProduct(null);
   };
+  const handleDelete = (id) => {
+    setProducts(products.filter(p => p.id !== id));
+  };
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
       <h1>NovaTech Solutions - Inventario</h1>
       <ProductForm onAddProduct={handleAdd} />
-      <ProductList products={products} onEdit={handleEdit} />
+      <ProductList products={products} onEdit={handleEdit} onDelete={handleDelete} />
     </div>
   );
 }
