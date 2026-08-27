@@ -97,4 +97,4 @@ Este proyecto implementa la arquitectura **Git Flow** de forma estricta:
 
 ## Sección de Soporte
 
-Contactar a Integrante A (soporteA@novatech.com)
+Contactar a Integrante B (soporteB@novatech.com)
