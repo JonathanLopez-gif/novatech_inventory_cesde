@@ -1,4 +1,4 @@
-# 📦 NovaTech Solutions - Sistema de Gestión de Inventario
+# 📦 NovaTech Solutions - Inventario Versión Develop
 
 Sistema de control y administración de inventario desarrollado con **React** y **Vite**, diseñado bajo estándares profesionales de control de versiones utilizando la metodología **Git Flow**.
 
