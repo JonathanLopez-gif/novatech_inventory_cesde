@@ -1,4 +1,4 @@
-# 📦 NovaTech Solutions - Inventario Versión Develop
+# 📦 NovaTech Solutions - Sistema de Control Total de Inventario
 
 Sistema de control y administración de inventario desarrollado con **React** y **Vite**, diseñado bajo estándares profesionales de control de versiones utilizando la metodología **Git Flow**.
 
@@ -95,7 +95,3 @@ Este proyecto implementa la arquitectura **Git Flow** de forma estricta:
 ## 👥 Equipo de Desarrollo
 
 **Developer Team** - NovaTech Solutions
-
-## Sección de Soporte
-
-Contactar a Integrante B (soporteB@novatech.com)
